@@ -1,6 +1,5 @@
 <template>
   <div>
-    <img class="icon" src="./assets/icon-star.svg">
     <cardRating msg="Welcome to Your Vue.js App" />
   </div>
 </template>
@@ -17,11 +16,11 @@ export default {
 
 <style>
 #app {
-  background-color: black;
-  width: 1020px;
+  width: 1280px;
+  background-color: hsl(0, 0%, 0%);
   height: 610px;
   font-family: Overpass, Helvetica, Arial, sans-serif;
   text-align: center;
-  color: #2c3e50;
+  color: hsl(210, 29%, 24%);
 }
 </style>
