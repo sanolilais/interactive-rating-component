@@ -1,8 +1,8 @@
 <template>
   <section class="container">
-    <div class="texts">
+    <div class="container__texts" v-show="!status.container">
       <div class="icons">
-        <img class="icon" src="../assets/icon-star.svg">
+        <img class="icon__star" src="../assets/icon-star.svg">
       </div>
       <h1>How did we do?</h1>
       <p class="description"> Please let us know how we did with you support request.
@@ -22,6 +22,16 @@ export default {
   components: {
     cardStars
   },
+  data() {
+    return {
+      starsRating: 1,
+      status: {
+        container: true
+      }
+    }
+  },
+
+
 }
 </script>
 
@@ -50,12 +60,12 @@ export default {
   margin-left: 40px;
 }
 
-.icon {
+.icon__star {
   margin: 19px;
   height: 20px;
 }
 
-.texts {
+.container__texts {
   text-align: left;
   margin: 25px;
   font-size: 15px;
